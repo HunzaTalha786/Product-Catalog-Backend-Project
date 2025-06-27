@@ -37,7 +37,7 @@ function ProductDetail() {
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/products/${id}`)
+    fetch(`https://product-catalog-backend-project-production.up.railway.app/api/products/${id}`)
       .then(res => res.json())
       .then(data => setProduct(data));
   }, [id]);

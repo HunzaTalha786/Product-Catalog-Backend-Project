@@ -205,7 +205,7 @@ function ProductList({ darkMode }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/products')
+    fetch('https://product-catalog-backend-project-production.up.railway.app/api/products')
       .then(res => res.json())
       .then(data => {
         setProducts(data);
